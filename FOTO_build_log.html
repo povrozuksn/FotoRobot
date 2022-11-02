@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>FOTO build log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<tt>
+Build started on: <u>02-11-2022 at 18:52.26</u><br />
+Build ended on: <u>02-11-2022 at 18:52.31</u><p />
+<b>-------------- Build: Debug in FOTO (compiler: GNU GCC Compiler)---------------</b><br />
+g++.bat -Wall -fexceptions  -g     -c C:\Users\root\source\repos\FOTO\main.cpp -o obj\Debug\main.o<br />
+------------------------------------------------------------------------------------------------------<br />
+Compilation ERRORS:<br />
+<br />
+C:\Users\root\source\repos\FOTO\main.cpp: In function 'void drawButton(Button)':<br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:11:6: warning: no previous declaration for 'void drawButton(Button)' [-Wmissing-declarations]</font><br />
+ void drawButton(Button btn)<br />
+      ^<br />
+C:\Users\root\source\repos\FOTO\main.cpp: In function 'bool Click(Button)':<br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:24:6: warning: no previous declaration for 'bool Click(Button)' [-Wmissing-declarations]</font><br />
+ bool Click(Button btn)<br />
+      ^<br />
+C:\Users\root\source\repos\FOTO\main.cpp: In function 'void drawPicture(Pictures)':<br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:46:6: warning: no previous declaration for 'void drawPicture(Pictures)' [-Wmissing-declarations]</font><br />
+ void drawPicture(Pictures pct)<br />
+      ^<br />
+C:\Users\root\source\repos\FOTO\main.cpp: In constructor 'Button::Button()':<br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:3:8: warning: 'Button::x' should be initialized in the member initialization list [-Weffc++]</font><br />
+ struct Button<br />
+        ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:3:8: warning: 'Button::y' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:3:8: warning: 'Button::text' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:3:8: warning: 'Button::category' should be initialized in the member initialization list [-Weffc++]</font><br />
+C:\Users\root\source\repos\FOTO\main.cpp: In function 'int main()':<br />
+C:\Users\root\source\repos\FOTO\main.cpp:68:25: note: synthesized method 'Button::Button()' first required here <br />
+     Button btn[COUNT_BTN];<br />
+                         ^<br />
+C:\Users\root\source\repos\FOTO\main.cpp: In constructor 'Pictures::Pictures()':<br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:33:8: warning: 'Pictures::x' should be initialized in the member initialization list [-Weffc++]</font><br />
+ struct Pictures<br />
+        ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:33:8: warning: 'Pictures::y' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:33:8: warning: 'Pictures::image' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:33:8: warning: 'Pictures::w' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:33:8: warning: 'Pictures::h' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:33:8: warning: 'Pictures::w_scr' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:33:8: warning: 'Pictures::h_scr' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:33:8: warning: 'Pictures::visible' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:33:8: warning: 'Pictures::category' should be initialized in the member initialization list [-Weffc++]</font><br />
+C:\Users\root\source\repos\FOTO\main.cpp: In function 'int main()':<br />
+C:\Users\root\source\repos\FOTO\main.cpp:77:40: note: synthesized method 'Pictures::Pictures()' first required here <br />
+     Pictures menuPicture[COUNT_PICTURES];<br />
+                                        ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:208:75: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+                 centralPicture[vybor].w_scr = centralPicture[vybor].w_scr * 1.02;<br />
+                                                                           ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:209:75: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+                 centralPicture[vybor].h_scr = centralPicture[vybor].h_scr * 1.02;;<br />
+                                                                           ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:214:75: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+                 centralPicture[vybor].w_scr = centralPicture[vybor].w_scr * 0.98;<br />
+                                                                           ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:215:75: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+                 centralPicture[vybor].h_scr = centralPicture[vybor].h_scr * 0.988;<br />
+                                                                           ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:225:54: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+                 centralPicture[vybor].x = txMouseX() - centralPicture[vybor].w/2;<br />
+                                                      ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\FOTO\main.cpp:226:54: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+                 centralPicture[vybor].y = txMouseY() - centralPicture[vybor].h/2;<br />
+                                                      ^<br />
+------------------------------------------------------------------------------------------------------<br />
+Autosaving to the Git repository in C:/Users/root/source/repos/FOTO/.git-auto/... <br />
+g++.exe  -o bin\Debug\FOTO.exe obj\Debug\main.o     -mwindows<br />
+Output size is 2,19 MB<br />
+<font color="#0000ff">Process terminated with status 0 (0 minutes, 5 seconds)</font><br />
+<font color="#0000ff">0 errors, 22 warnings (0 minutes, 5 seconds)</font><br />
+</tt>
+</body>
+</html>

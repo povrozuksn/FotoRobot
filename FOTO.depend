@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1666967158 source:c:\users\root\source\repos\foto\main.cpp
+	"TXLib.h"
+
+1664982360 source:c:\users\root\source\repos\foto\button.cpp
+	"TXLib.h"
+
+1664982360 c:\users\root\source\repos\foto\button.cpp
+	"TXLib.h"
+
+1664981413 c:\users\root\source\repos\foto\pictures.cpp
+	"TXLib.h"
+
+1664981413 source:c:\users\root\source\repos\foto\pictures.cpp
+	"TXLib.h"
+
+1664982360 source:c:\users\root\source\repos\foto\picture.cpp
+	"TXLib.h"
+
+1664982360 c:\users\root\source\repos\foto\picture.cpp
+	"TXLib.h"
+

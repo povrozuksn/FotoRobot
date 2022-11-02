@@ -1,0 +1,541 @@
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRE0, Thread: 0x3898 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004173D3 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txTransparentBlt() at c:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0041D7B0 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (37):
+
+     35:         drawButton(420, 30, "Глаза");
+     36: 
+=>   37:         txTransparentBlt(txDC(), 50, 100, 50, 65, nos1, 0, 0, TX_WHITE);
+     38:         txTransparentBlt(txDC(), 50, 200, 50, 65, nos2, 0, 0, TX_WHITE);
+     39:         txTransparentBlt(txDC(), 50, 300, 50, 65, nos3, 0, 0, TX_WHITE);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 18:13:07, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 21 2022 18:04:52
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRE0, Thread: 0x3898 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004173D3 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txTransparentBlt() at c:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0041D83A in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (38):
+
+     36: 
+     37:         txTransparentBlt(txDC(), 50, 100, 50, 65, nos1, 0, 0, TX_WHITE);
+=>   38:         txTransparentBlt(txDC(), 50, 200, 50, 65, nos2, 0, 0, TX_WHITE);
+     39:         txTransparentBlt(txDC(), 50, 300, 50, 65, nos3, 0, 0, TX_WHITE);
+     40: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 18:13:07, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 21 2022 18:04:52
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#3: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRE0, Thread: 0x3898 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004173D3 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txTransparentBlt() at c:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0041D8C4 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (39):
+
+     37:         txTransparentBlt(txDC(), 50, 100, 50, 65, nos1, 0, 0, TX_WHITE);
+     38:         txTransparentBlt(txDC(), 50, 200, 50, 65, nos2, 0, 0, TX_WHITE);
+=>   39:         txTransparentBlt(txDC(), 50, 300, 50, 65, nos3, 0, 0, TX_WHITE);
+     40: 
+     41: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 18:13:07, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 21 2022 18:04:52
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#4: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRE0, Thread: 0x3898 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004173D3 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txTransparentBlt() at c:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0041D7B0 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (37):
+
+     35:         drawButton(420, 30, "Глаза");
+     36: 
+=>   37:         txTransparentBlt(txDC(), 50, 100, 50, 65, nos1, 0, 0, TX_WHITE);
+     38:         txTransparentBlt(txDC(), 50, 200, 50, 65, nos2, 0, 0, TX_WHITE);
+     39:         txTransparentBlt(txDC(), 50, 300, 50, 65, nos3, 0, 0, TX_WHITE);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 18:13:07, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 21 2022 18:04:52
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x765795F8 в функции strchr(). Попытка прочесть данные по адресу 0x460126A6 в модуле C:\WINDOWS\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRE0, Thread: 0x3F9C (Main), GetLastError(): 6 (Неверный дескриптор). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x765795F8 in C:\WINDOWS\System32\msvcrt.dll: strchr()
+
+# 1 0x0041D5CB in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: drawButton() at C:/Users/root/source/repos/FOTO/main.cpp (20):
+
+     18:     txSetColor (TX_BLACK);
+     19:     txSelectFont("Times New Roman", 32);
+=>   20:     txDrawText(btn.x, btn.y, btn.x+150, btn.y+40, btn.text);
+     21: }
+     22: 
+
+# 2 0x0041D8A6 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (48):
+
+     46:         for(int nk=0; nk<11; nk++)
+     47:         {
+=>   48:             drawButton(btn[nk]);
+     49:         }
+     50:         /*
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 21 2022 19:11:34, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 21 2022 19:11:38
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x765795F8 в функции strchr(). Попытка прочесть данные по адресу 0x460126A6 в модуле C:\WINDOWS\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRE0, Thread: 0x3F9C (Main), GetLastError(): 6 (Неверный дескриптор). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x765795F8 in C:\WINDOWS\System32\msvcrt.dll: strchr()
+
+# 1 0x0041D5CB in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: drawButton() at C:/Users/root/source/repos/FOTO/main.cpp (20):
+
+     18:     txSetColor (TX_BLACK);
+     19:     txSelectFont("Times New Roman", 32);
+=>   20:     txDrawText(btn.x, btn.y, btn.x+150, btn.y+40, btn.text);
+     21: }
+     22: 
+
+# 2 0x0041D8A6 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (48):
+
+     46:         for(int nk=0; nk<11; nk++)
+     47:         {
+=>   48:             drawButton(btn[nk]);
+     49:         }
+     50:         /*
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 21 2022 19:11:34, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 21 2022 19:11:39
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRE0, Thread: 0x2B78 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004173D3 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txTransparentBlt() at c:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0041DB8F in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (89):
+
+     87:         if(glazaVisible)
+     88:         {
+=>   89:             txTransparentBlt(txDC(), 50, 100, 50, 65, glaza1, 0, 0, TX_WHITE);
+     90:             txTransparentBlt(txDC(), 50, 200, 50, 65, glaza2, 0, 0, TX_WHITE);
+     91:             txTransparentBlt(txDC(), 50, 300, 50, 65, glaza3, 0, 0, TX_WHITE);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 23 2022 18:39:39, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 23 2022 18:39:45
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRE0, Thread: 0x36D0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004173D3 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txTransparentBlt() at c:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0041DB8F in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (89):
+
+     87:         if(glazaVisible)
+     88:         {
+=>   89:             txTransparentBlt(txDC(), 50, 100, 200, 65, glaza1, 0, 0, TX_WHITE);
+     90:             txTransparentBlt(txDC(), 50, 200, 200, 65, glaza2, 0, 0, TX_WHITE);
+     91:             txTransparentBlt(txDC(), 50, 300, 200, 65, glaza3, 0, 0, TX_WHITE);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 23 2022 18:40:51, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 23 2022 18:40:55
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 200, 65} не полностью лежит внутри изображения-источника {0, 0, 50, 65}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F52FC (32-bit), Flags: CMdRE0, Thread: 0x115C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00417523 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txTransparentBlt() at c:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0041D784 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: drawPicture() at C:/Users/root/source/repos/FOTO/main.cpp (41):
+
+     39: void drawPicture(Pictures pct)
+     40: {
+=>   41:     txTransparentBlt(txDC(), pct.x, pct.y, 200, 65, pct.image, 0, 0, TX_WHITE);
+     42: };
+     43: 
+
+# 2 0x0041DEDE in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (116):
+
+    114:             for(int npic=9; npic <= 11; npic++)
+    115:             {
+=>  116:                 drawPicture(menuPicture[npic]);
+    117:             }
+    118:         }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 28 2022 19:05:32, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 28 2022 19:05:37
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 10837, функция: HDC__* {anonymous}::TX::_txBuffer_Create(HWND, const POINT*, HBITMAP, RGBQUAD**),
+
+Сообщение: Cannot create buffer: CreateCompatibleBitmap() failed
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F52FC (32-bit), Flags: CMdRE0, Thread: 0x11E8 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040A774 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txBuffer_Create() at c:/codeblocks/mingw/include/txlib.h (10837)
+# 1 0x00406FFF in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txCreateTXIcon() at c:/codeblocks/mingw/include/txlib.h (9914)
+# 2 0x00411541 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txNotifyIcon() at c:/codeblocks/mingw/include/txlib.h (12727)
+# 3 0x00416857 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txCreateCompatibleDC() at c:/codeblocks/mingw/include/txlib.h (13536)
+# 4 0x00416AC3 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txLoadImage() at c:/codeblocks/mingw/include/txlib.h (13574)
+
+# 5 0x0041DF6D in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (88):
+
+     86:         menuPicture[9] = {50, 100, txLoadImage ("Pictures/Носы/нос1.bmp"), 50, 65, 50, 65};
+     87:         menuPicture[10] = {50, 200, txLoadImage ("Pictures/Носы/нос2.bmp"), 50, 65, 50, 65};
+=>   88:         menuPicture[11] = {50, 300, txLoadImage ("Pictures/Носы/нос3.bmp"), 50, 65, 50, 65};
+     89: 
+     90:         //Рисование кнопок
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 18:14:43, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 30 2022 18:14:47
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 10839, функция: HDC__* {anonymous}::TX::_txBuffer_Create(HWND, const POINT*, HBITMAP, RGBQUAD**),
+
+Сообщение: Обнаружен нулевой или ложный результат.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F52FC (32-bit), Flags: CMdRE0, Thread: 0x11E8 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040A7BC in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txBuffer_Create() at c:/codeblocks/mingw/include/txlib.h (10839)
+# 1 0x00406FFF in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txCreateTXIcon() at c:/codeblocks/mingw/include/txlib.h (9914)
+# 2 0x00411541 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txNotifyIcon() at c:/codeblocks/mingw/include/txlib.h (12727)
+# 3 0x00416857 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txCreateCompatibleDC() at c:/codeblocks/mingw/include/txlib.h (13536)
+# 4 0x00416AC3 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txLoadImage() at c:/codeblocks/mingw/include/txlib.h (13574)
+
+# 5 0x0041DF6D in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (88):
+
+     86:         menuPicture[9] = {50, 100, txLoadImage ("Pictures/Носы/нос1.bmp"), 50, 65, 50, 65};
+     87:         menuPicture[10] = {50, 200, txLoadImage ("Pictures/Носы/нос2.bmp"), 50, 65, 50, 65};
+=>   88:         menuPicture[11] = {50, 300, txLoadImage ("Pictures/Носы/нос3.bmp"), 50, 65, 50, 65};
+     89: 
+     90:         //Рисование кнопок
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 18:14:43, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 30 2022 18:14:47
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 10076, функция: bool {anonymous}::TX::_txCanvas_OnDESTROY(HWND),
+
+Сообщение: Cannot lock GDI to free resources
+
+#3: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F52FC (32-bit), Flags: CMdrE0, Thread: 0x3BB0 (Canvas). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00407C58 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txCanvas_OnDESTROY() at c:/codeblocks/mingw/include/txlib.h (10076)
+# 1 0x004075BE in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txCanvas_WndProc() at c:/codeblocks/mingw/include/txlib.h (9993)
+# 2 0x76590BCB in C:\WINDOWS\System32\USER32.dll: AddClipboardFormatListener()
+# 3 0x76587B8A in C:\WINDOWS\System32\USER32.dll: GetClassLongW()
+# 4 0x7658778A in C:\WINDOWS\System32\USER32.dll: GetClassLongW()
+# 5 0x7658B35F in C:\WINDOWS\System32\USER32.dll: CallNextHookEx()
+# 6 0x77C44F5D in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserCallbackDispatcher()
+# 7 0x765734EC in C:\WINDOWS\System32\USER32.dll: MBToWCSEx()
+# 8 0x76573457 in C:\WINDOWS\System32\USER32.dll: MBToWCSEx()
+# 9 0x004077AF in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txCanvas_WndProc() at c:/codeblocks/mingw/include/txlib.h (10032)
+#10 0x76590BCB in C:\WINDOWS\System32\USER32.dll: AddClipboardFormatListener()
+#11 0x76587B8A in C:\WINDOWS\System32\USER32.dll: GetClassLongW()
+#12 0x7658778A in C:\WINDOWS\System32\USER32.dll: GetClassLongW()
+#13 0x7658B35F in C:\WINDOWS\System32\USER32.dll: CallNextHookEx()
+#14 0x77C44F5D in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserCallbackDispatcher()
+#15 0x765734EC in C:\WINDOWS\System32\USER32.dll: MBToWCSEx()
+#16 0x74E63665 in C:\WINDOWS\system32\uxtheme.dll: Ordinal132()
+#17 0x74E5FB91 in C:\WINDOWS\system32\uxtheme.dll: Ordinal45()
+#18 0x74E58C08 in C:\WINDOWS\system32\uxtheme.dll: GetThemeBackgroundRegion()
+#19 0x7657348C in C:\WINDOWS\System32\USER32.dll: MBToWCSEx()
+#20 0x004077AF in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txCanvas_WndProc() at c:/codeblocks/mingw/include/txlib.h (10032)
+#21 0x76590BCB in C:\WINDOWS\System32\USER32.dll: AddClipboardFormatListener()
+#22 0x76587B8A in C:\WINDOWS\System32\USER32.dll: GetClassLongW()
+#23 0x7658778A in C:\WINDOWS\System32\USER32.dll: GetClassLongW()
+#24 0x7658B35F in C:\WINDOWS\System32\USER32.dll: CallNextHookEx()
+#25 0x77C44F5D in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserCallbackDispatcher()
+#26 0x765734EC in C:\WINDOWS\System32\USER32.dll: MBToWCSEx()
+#27 0x74E63665 in C:\WINDOWS\system32\uxtheme.dll: Ordinal132()
+#28 0x74E5FB91 in C:\WINDOWS\system32\uxtheme.dll: Ordinal45()
+#29 0x74E58C08 in C:\WINDOWS\system32\uxtheme.dll: GetThemeBackgroundRegion()
+#30 0x7657348C in C:\WINDOWS\System32\USER32.dll: MBToWCSEx()
+#31 0x004077AF in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txCanvas_WndProc() at c:/codeblocks/mingw/include/txlib.h (10032)
+#32 0x76590BCB in C:\WINDOWS\System32\USER32.dll: AddClipboardFormatListener()
+#33 0x76587B8A in C:\WINDOWS\System32\USER32.dll: GetClassLongW()
+#34 0x765858FA in C:\WINDOWS\System32\USER32.dll: DispatchMessageW()
+#35 0x76577A90 in C:\WINDOWS\System32\USER32.dll: DispatchMessageA()
+#36 0x004065B1 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txCanvas_ThreadProc() at c:/codeblocks/mingw/include/txlib.h (9776)
+#37 0x760D6CFF in C:\WINDOWS\System32\msvcrt.dll: beginthreadex()
+#38 0x760D6DC1 in C:\WINDOWS\System32\msvcrt.dll: endthreadex()
+#39 0x7756FA29 in C:\WINDOWS\System32\KERNEL32.dll: BaseThreadInitThunk()
+#40 0x77C37B5E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+#41 0x77C37B2E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 18:14:43, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 30 2022 18:14:47
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
