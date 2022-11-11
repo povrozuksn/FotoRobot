@@ -539,3 +539,325 @@ Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
 Directory:	C:\Users\root\source\repos\FOTO
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 10854, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRE0, Thread: 0x2AC0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040A9D0 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txBuffer_Delete() at c:/codeblocks/mingw/include/txlib.h (10854)
+# 1 0x00416CF7 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txDeleteDC() at c:/codeblocks/mingw/include/txlib.h (13597)
+# 2 0x00416E43 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txDeleteDC() at c:/codeblocks/mingw/include/txlib.h (13619)
+
+# 3 0x00420206 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (264):
+
+    262:     for(int npic=0; npic < COUNT_PICTURES; npic++)
+    263:     {
+=>  264:         txDeleteDC(centralPicture[npic].image);
+    265:     }
+    266: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 11 2022 18:52:13, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 11 2022 18:52:18
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 10854, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRE0, Thread: 0x2AC0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040A9D0 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txBuffer_Delete() at c:/codeblocks/mingw/include/txlib.h (10854)
+# 1 0x00416CF7 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txDeleteDC() at c:/codeblocks/mingw/include/txlib.h (13597)
+# 2 0x00416E43 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txDeleteDC() at c:/codeblocks/mingw/include/txlib.h (13619)
+
+# 3 0x00420206 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (264):
+
+    262:     for(int npic=0; npic < COUNT_PICTURES; npic++)
+    263:     {
+=>  264:         txDeleteDC(centralPicture[npic].image);
+    265:     }
+    266: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 11 2022 18:52:13, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 11 2022 18:52:18
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 10854, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#3: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRE0, Thread: 0x2AC0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040A9D0 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txBuffer_Delete() at c:/codeblocks/mingw/include/txlib.h (10854)
+# 1 0x00416CF7 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txDeleteDC() at c:/codeblocks/mingw/include/txlib.h (13597)
+# 2 0x00416E43 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txDeleteDC() at c:/codeblocks/mingw/include/txlib.h (13619)
+
+# 3 0x00420206 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (264):
+
+    262:     for(int npic=0; npic < COUNT_PICTURES; npic++)
+    263:     {
+=>  264:         txDeleteDC(centralPicture[npic].image);
+    265:     }
+    266: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 11 2022 18:52:13, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 11 2022 18:52:18
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 10854, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#4: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRE0, Thread: 0x2AC0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040A9D0 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txBuffer_Delete() at c:/codeblocks/mingw/include/txlib.h (10854)
+# 1 0x00416CF7 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txDeleteDC() at c:/codeblocks/mingw/include/txlib.h (13597)
+# 2 0x00416E43 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txDeleteDC() at c:/codeblocks/mingw/include/txlib.h (13619)
+
+# 3 0x00420206 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (264):
+
+    262:     for(int npic=0; npic < COUNT_PICTURES; npic++)
+    263:     {
+=>  264:         txDeleteDC(centralPicture[npic].image);
+    265:     }
+    266: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 11 2022 18:52:13, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 11 2022 18:52:18
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 10854, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#5: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRE0, Thread: 0x2AC0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040A9D0 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txBuffer_Delete() at c:/codeblocks/mingw/include/txlib.h (10854)
+# 1 0x00416CF7 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txDeleteDC() at c:/codeblocks/mingw/include/txlib.h (13597)
+# 2 0x00416E43 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txDeleteDC() at c:/codeblocks/mingw/include/txlib.h (13619)
+
+# 3 0x00420206 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (264):
+
+    262:     for(int npic=0; npic < COUNT_PICTURES; npic++)
+    263:     {
+=>  264:         txDeleteDC(centralPicture[npic].image);
+    265:     }
+    266: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 11 2022 18:52:13, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 11 2022 18:52:18
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 13568, функция: HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "filename && *filename".
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRE0, Thread: 0x3AA4 (Main), GetLastError(): 160 (Неверны один или несколько аргументов). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004169EC in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txLoadImage() at c:/codeblocks/mingw/include/txlib.h (13568)
+
+# 1 0x0041DCF2 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (79):
+
+     77:     //Массив картинок-меню
+     78:     Pictures menuPicture[COUNT_PICTURES];
+=>   79:     menuPicture[0] = {50, 100, "Pictures/Лицо/Овал1.bmp",     txLoadImage (menuPicture[0].adress.c_str()), 450, 450, NULL, NULL, "Лицо"};
+     80:     menuPicture[1] = {50, 200, "Pictures/Лицо/Овал2.bmp",     txLoadImage (menuPicture[1].adress.c_str()), 450, 450, NULL, NULL, "Лицо"};
+     81:     menuPicture[2] = {50, 300, "Pictures/Лицо/Овал3.bmp",     txLoadImage (menuPicture[2].adress.c_str()), 450, 450, NULL, NULL, "Лицо"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 11 2022 19:14:15, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 11 2022 19:14:22
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 13568, функция: HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "filename && *filename".
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRE0, Thread: 0x38B4 (Main), GetLastError(): 160 (Неверны один или несколько аргументов). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004169EC in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txLoadImage() at c:/codeblocks/mingw/include/txlib.h (13568)
+
+# 1 0x0041DCF2 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (79):
+
+     77:     //Массив картинок-меню
+     78:     Pictures menuPicture[COUNT_PICTURES];
+=>   79:     menuPicture[0] = {50, 100, "Pictures/Лицо/Овал1.bmp",     txLoadImage (menuPicture[0].adress.c_str()), 450, 450, NULL, NULL, "Лицо"};
+     80:     menuPicture[1] = {50, 200, "Pictures/Лицо/Овал2.bmp",     txLoadImage (menuPicture[1].adress.c_str()), 450, 450, NULL, NULL, "Лицо"};
+     81:     menuPicture[2] = {50, 300, "Pictures/Лицо/Овал3.bmp",     txLoadImage (menuPicture[2].adress.c_str()), 450, 450, NULL, NULL, "Лицо"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 11 2022 19:14:15, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 11 2022 19:18:04
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 13568, функция: HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "filename && *filename".
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRE0, Thread: 0x5060 (Main), GetLastError(): 160 (Неверны один или несколько аргументов). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004169EC in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txLoadImage() at c:/codeblocks/mingw/include/txlib.h (13568)
+
+# 1 0x0041DDCF in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (80):
+
+     78:     Pictures menuPicture[COUNT_PICTURES];
+     79:     menuPicture[0] = {50, 100, "Pictures/Лицо/Овал1.bmp",     NULL, 450, 450, NULL, NULL, "Лицо"};
+=>   80:     menuPicture[1] = {50, 200, "Pictures/Лицо/Овал2.bmp",     txLoadImage (menuPicture[1].adress.c_str()), 450, 450, NULL, NULL, "Лицо"};
+     81:     menuPicture[2] = {50, 300, "Pictures/Лицо/Овал3.bmp",     txLoadImage (menuPicture[2].adress.c_str()), 450, 450, NULL, NULL, "Лицо"};
+     82:     menuPicture[3] = {50, 100, "Pictures/Волосы/Волосы1.bmp", txLoadImage (menuPicture[3].adress.c_str()), 350, 350, NULL, NULL, "Волосы"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 11 2022 19:22:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 11 2022 19:22:31
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------

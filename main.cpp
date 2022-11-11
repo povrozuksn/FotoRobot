@@ -34,13 +34,14 @@ struct Pictures
 {
     int x;
     int y;
+    string adress;
     HDC image;
     int w;
     int h;
     int w_scr;
     int h_scr;
-    bool visible;
     string category;
+    bool visible;
 };
 
 void drawPicture(Pictures pct)
@@ -75,43 +76,75 @@ int main()
 
     //Массив картинок-меню
     Pictures menuPicture[COUNT_PICTURES];
-    menuPicture[0] = {50, 100, txLoadImage ("Pictures/Овал/Овал1.bmp"), 450, 450, 65, 65, false, "Лицо"};
-    menuPicture[1] = {50, 200, txLoadImage ("Pictures/Овал/Овал2.bmp"), 450, 450, 65, 65, false, "Лицо"};
-    menuPicture[2] = {50, 300, txLoadImage ("Pictures/Овал/Овал3.bmp"), 450, 450, 65, 65, false, "Лицо"};
-    menuPicture[3] = {50, 100, txLoadImage ("Pictures/Волосы/Волосы1.bmp"), 350, 350, 65, 65, false, "Волосы"};
-    menuPicture[4] = {50, 200, txLoadImage ("Pictures/Волосы/Волосы2.bmp"), 350, 350, 65, 65, false, "Волосы"};
-    menuPicture[5] = {50, 300, txLoadImage ("Pictures/Волосы/Волосы3.bmp"), 350, 350, 65, 65, false, "Волосы"};
-    menuPicture[6] = {50, 100, txLoadImage ("Pictures/Глаза/Глаза1.bmp"), 200, 65, 200, 65, false, "Глаза"};
-    menuPicture[7] = {50, 200, txLoadImage ("Pictures/Глаза/Глаза2.bmp"), 200, 65, 200, 65, false, "Глаза"};
-    menuPicture[8] = {50, 300, txLoadImage ("Pictures/Глаза/Глаза3.bmp"), 200, 65, 200, 65, false, "Глаза"};
-    menuPicture[9] = {50, 100, txLoadImage ("Pictures/Носы/нос1.bmp"), 50, 65, 50, 65, false, "Носы"};
-    menuPicture[10] = {50, 200, txLoadImage ("Pictures/Носы/нос2.bmp"), 50, 65, 50, 65, false, "Носы"};
-    menuPicture[11] = {50, 300, txLoadImage ("Pictures/Носы/нос3.bmp"), 50, 65, 50, 65, false, "Носы"};
-    menuPicture[12] = {50, 100, txLoadImage ("Pictures/Губы/Губы1.bmp"), 100, 40, 100, 40, false, "Губы"};
-    menuPicture[13] = {50, 200, txLoadImage ("Pictures/Губы/Губы2.bmp"), 100, 40, 100, 40, false, "Губы"};
-    menuPicture[14] = {50, 300, txLoadImage ("Pictures/Губы/Губы3.bmp"), 100, 40, 100, 40, false, "Губы"};
-    menuPicture[15] = {50, 400, txLoadImage ("Pictures/Губы/Губы4.bmp"), 100, 40, 100, 40, false, "Губы"};
+    menuPicture[0] = {50, 100, "Pictures/Лицо/Овал1.bmp",     NULL, 450, 450, NULL, NULL, "Лицо"};
+    menuPicture[1] = {50, 200, "Pictures/Лицо/Овал2.bmp",     NULL, 450, 450, NULL, NULL, "Лицо"};
+    menuPicture[2] = {50, 300, "Pictures/Лицо/Овал3.bmp",     NULL, 450, 450, NULL, NULL, "Лицо"};
+    menuPicture[3] = {50, 100, "Pictures/Волосы/Волосы1.bmp", NULL, 350, 350, NULL, NULL, "Волосы"};
+    menuPicture[4] = {50, 200, "Pictures/Волосы/Волосы2.bmp", NULL, 350, 350, NULL, NULL, "Волосы"};
+    menuPicture[5] = {50, 300, "Pictures/Волосы/Волосы3.bmp", NULL, 350, 350, NULL, NULL, "Волосы"};
+    menuPicture[6] = {50, 100, "Pictures/Глаза/Глаза1.bmp",   NULL, 200, 65, NULL, NULL, "Глаза"};
+    menuPicture[7] = {50, 200, "Pictures/Глаза/Глаза2.bmp",   NULL, 200, 65, NULL, NULL, "Глаза"};
+    menuPicture[8] = {50, 300, "Pictures/Глаза/Глаза3.bmp",   NULL, 200, 65, NULL, NULL, "Глаза"};
+    menuPicture[9] = {50, 100, "Pictures/Носы/нос1.bmp",      NULL, 50, 65, NULL, NULL, "Носы"};
+    menuPicture[10] = {50, 200, "Pictures/Носы/нос2.bmp",     NULL, 50, 65, NULL, NULL, "Носы"};
+    menuPicture[11] = {50, 300, "Pictures/Носы/нос3.bmp",     NULL, 50, 65, NULL, NULL, "Носы"};
+    menuPicture[12] = {50, 100, "Pictures/Губы/Губы1.bmp",    NULL, 100, 40, NULL, NULL, "Губы"};
+    menuPicture[13] = {50, 200, "Pictures/Губы/Губы2.bmp",    NULL, 100, 40, NULL, NULL, "Губы"};
+    menuPicture[14] = {50, 300, "Pictures/Губы/Губы3.bmp",    NULL, 100, 40, NULL, NULL, "Губы"};
+    menuPicture[15] = {50, 400, "Pictures/Губы/Губы4.bmp",    NULL, 100, 40, NULL, NULL, "Губы"};
 
     //Массив картинок в центре
     Pictures centralPicture[COUNT_PICTURES];
-    centralPicture[0] = {450, 200, menuPicture[0].image, menuPicture[0].w, menuPicture[0].h, menuPicture[0].w, menuPicture[0].h, menuPicture[0].visible, menuPicture[0].category};
-    centralPicture[1] = {450, 200, menuPicture[1].image, menuPicture[1].w, menuPicture[1].h, menuPicture[1].w, menuPicture[1].h, menuPicture[1].visible, menuPicture[1].category};
-    centralPicture[2] = {450, 200, menuPicture[2].image, menuPicture[2].w, menuPicture[2].h, menuPicture[2].w, menuPicture[2].h, menuPicture[2].visible, menuPicture[2].category};
-    centralPicture[3] = {490, 150, menuPicture[3].image, menuPicture[3].w, menuPicture[3].h, menuPicture[3].w, menuPicture[3].h, menuPicture[3].visible, menuPicture[3].category};
-    centralPicture[4] = {490, 150, menuPicture[4].image, menuPicture[4].w, menuPicture[4].h, menuPicture[4].w, menuPicture[4].h, menuPicture[4].visible, menuPicture[4].category};
-    centralPicture[5] = {490, 150, menuPicture[5].image, menuPicture[5].w, menuPicture[5].h, menuPicture[5].w, menuPicture[5].h, menuPicture[5].visible, menuPicture[5].category};
-    centralPicture[6] = {570, 400, menuPicture[6].image, menuPicture[6].w, menuPicture[6].h, menuPicture[6].w, menuPicture[6].h, menuPicture[6].visible, menuPicture[6].category};
-    centralPicture[7] = {570, 400, menuPicture[7].image, menuPicture[7].w, menuPicture[7].h, menuPicture[7].w, menuPicture[7].h, menuPicture[7].visible, menuPicture[7].category};
-    centralPicture[8] = {570, 400, menuPicture[8].image, menuPicture[8].w, menuPicture[8].h, menuPicture[8].w, menuPicture[8].h, menuPicture[8].visible, menuPicture[8].category};
-    centralPicture[9] = {640, 460, menuPicture[9].image, menuPicture[9].w, menuPicture[9].h, menuPicture[9].w, menuPicture[9].h, menuPicture[9].visible, menuPicture[9].category};
-    centralPicture[10] = {640, 460, menuPicture[10].image, menuPicture[10].w, menuPicture[10].h, menuPicture[10].w, menuPicture[10].h, menuPicture[10].visible, menuPicture[10].category};
-    centralPicture[11] = {640, 460, menuPicture[11].image, menuPicture[11].w, menuPicture[11].h, menuPicture[11].w, menuPicture[11].h, menuPicture[11].visible, menuPicture[11].category};
-    centralPicture[12] = {620, 550, menuPicture[12].image, menuPicture[12].w, menuPicture[12].h, menuPicture[12].w, menuPicture[12].h, menuPicture[12].visible, menuPicture[12].category};
-    centralPicture[13] = {620, 550, menuPicture[13].image, menuPicture[13].w, menuPicture[13].h, menuPicture[13].w, menuPicture[13].h, menuPicture[13].visible, menuPicture[13].category};
-    centralPicture[14] = {620, 550, menuPicture[14].image, menuPicture[14].w, menuPicture[14].h, menuPicture[14].w, menuPicture[14].h, menuPicture[14].visible, menuPicture[14].category};
-    centralPicture[15] = {620, 550, menuPicture[15].image, menuPicture[15].w, menuPicture[15].h, menuPicture[15].w, menuPicture[15].h, menuPicture[15].visible, menuPicture[15].category};
+    centralPicture[0] = {450, 200};
+    centralPicture[1] = {450, 200};
+    centralPicture[2] = {450, 200};
+    centralPicture[3] = {490, 150};
+    centralPicture[4] = {490, 150};
+    centralPicture[5] = {490, 150};
+    centralPicture[6] = {570, 400};
+    centralPicture[7] = {570, 400};
+    centralPicture[8] = {570, 400};
+    centralPicture[9] = {640, 460};
+    centralPicture[10] = {640, 460};
+    centralPicture[11] = {640, 460};
+    centralPicture[12] = {620, 550};
+    centralPicture[13] = {620, 550};
+    centralPicture[14] = {620, 550};
+    centralPicture[15] = {620, 550};
+
+    for(int npic=0; npic < COUNT_PICTURES; npic++)
+    {
+        menuPicture[npic].image = txLoadImage (menuPicture[npic].adress.c_str());
+
+        if(menuPicture[npic].category == "Лицо" || menuPicture[npic].category == "Волосы")
+        {
+            menuPicture[npic].w_scr = 100;
+            menuPicture[npic].h_scr = 100;
+        }
+
+        if(menuPicture[npic].category == "Глаза" )
+        {
+            menuPicture[npic].w_scr = 100;
+            menuPicture[npic].h_scr = 35;
+        }
+
+        if(menuPicture[npic].category == "Носы" || menuPicture[npic].category == "Губы")
+        {
+            menuPicture[npic].w_scr = menuPicture[npic].w;
+            menuPicture[npic].h_scr = menuPicture[npic].h;
+        }
 
 
+        menuPicture[npic].visible = false;
+
+        centralPicture[npic].image = menuPicture[npic].image;
+        centralPicture[npic].w = menuPicture[npic].w;
+        centralPicture[npic].h = menuPicture[npic].h;
+        centralPicture[npic].w_scr = centralPicture[npic].w;
+        centralPicture[npic].h_scr = centralPicture[npic].h;
+        centralPicture[npic].visible = menuPicture[npic].visible;
+        centralPicture[npic].category = menuPicture[npic].category;
+    }
 
     while(!GetAsyncKeyState(VK_ESCAPE))
     {
@@ -193,7 +226,7 @@ int main()
         }
 
         sprintf(str, "выбор = %d", vybor);
-        txTextOut(0,0, str);
+        //txTextOut(0,0, str);
 
         //Передвижение выбраной центральной кортинки клавишами
         if(vybor>=0)
