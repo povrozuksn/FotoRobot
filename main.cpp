@@ -1,4 +1,10 @@
 #include "TXLib.h"
+#include <iostream>
+#include <fstream>
+#include "dirent.h"
+#include <conio.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 struct Button
 {
@@ -76,7 +82,27 @@ int get_h(string adress)
     return h;
 }
 
-
+int readFromDir(string adress, Pictures menuPicture[], int COUNT_PICTURES)
+{
+    DIR *dir;
+    struct dirent *ent;
+    int lastY = 100;
+    if ((dir = opendir (adress.c_str())) != NULL)
+    {
+      while ((ent = readdir (dir)) != NULL)
+      {
+        if((string)ent->d_name != "." && (string)ent->d_name != "..")
+        {
+            menuPicture[COUNT_PICTURES].y = lastY;
+            menuPicture[COUNT_PICTURES].adress = adress + (string)ent->d_name;
+            COUNT_PICTURES ++;
+            lastY +=100;
+        }
+      }
+      closedir (dir);
+    }
+    return COUNT_PICTURES;
+}
 
 int main()
 {
@@ -84,8 +110,8 @@ int main()
     txDisableAutoPause();
     txTextCursor (false);
 
-    int COUNT_BTN = 5;
-    int COUNT_PICTURES = 16;
+    int COUNT_BTN = 7;
+    int COUNT_PICTURES = 0;
     int vybor = -1;
     bool mouse_free = false;
     char str[100];
@@ -97,29 +123,21 @@ int main()
     btn[2] = {420, 30, "Глаза", "Глаза"};
     btn[3] = {580, 30, "Носы", "Носы"};
     btn[4] = {740, 30, "Губы", "Губы"};
+    btn[5] = {1000, 30, "Сохранить", ""};
+    btn[6] = {1000, 80, "Загрузить", ""};
 
 
     //Массив картинок-меню
-    Pictures menuPicture[COUNT_PICTURES];
-    menuPicture[0] = {NULL, 100, "Pictures/Лицо/Овал1.bmp"};
-    menuPicture[1] = {NULL, 200, "Pictures/Лицо/Овал2.bmp"};
-    menuPicture[2] = {NULL, 300, "Pictures/Лицо/Овал3.bmp"};
-    menuPicture[3] = {NULL, 100, "Pictures/Волосы/Волосы1.bmp"};
-    menuPicture[4] = {NULL, 200, "Pictures/Волосы/Волосы2.bmp"};
-    menuPicture[5] = {NULL, 300, "Pictures/Волосы/Волосы3.bmp"};
-    menuPicture[6] = {NULL, 100, "Pictures/Глаза/Глаза1.bmp"};
-    menuPicture[7] = {NULL, 200, "Pictures/Глаза/Глаза2.bmp"};
-    menuPicture[8] = {NULL, 300, "Pictures/Глаза/Глаза3.bmp"};
-    menuPicture[9] = {NULL, 100, "Pictures/Носы/нос1.bmp"};
-    menuPicture[10] = {NULL, 200, "Pictures/Носы/нос2.bmp"};
-    menuPicture[11] = {NULL, 300, "Pictures/Носы/нос3.bmp"};
-    menuPicture[12] = {NULL, 100, "Pictures/Губы/Губы1.bmp"};
-    menuPicture[13] = {NULL, 200, "Pictures/Губы/Губы2.bmp"};
-    menuPicture[14] = {NULL, 300, "Pictures/Губы/Губы3.bmp"};
-    menuPicture[15] = {NULL, 400, "Pictures/Губы/Губы4.bmp"};
+    Pictures menuPicture[100];
 
     //Массив картинок в центре
-    Pictures centralPicture[COUNT_PICTURES];
+    Pictures centralPicture[100];
+
+    COUNT_PICTURES = readFromDir("Pictures/Лицо/", menuPicture, COUNT_PICTURES);
+    COUNT_PICTURES = readFromDir("Pictures/Волосы/", menuPicture, COUNT_PICTURES);
+    COUNT_PICTURES = readFromDir("Pictures/Глаза/", menuPicture, COUNT_PICTURES);
+    COUNT_PICTURES = readFromDir("Pictures/Носы/", menuPicture, COUNT_PICTURES);
+    COUNT_PICTURES = readFromDir("Pictures/Губы/", menuPicture, COUNT_PICTURES);
 
 
     for(int npic=0; npic < COUNT_PICTURES; npic++)

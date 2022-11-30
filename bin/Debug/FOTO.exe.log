@@ -861,3 +861,1171 @@ Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
 Directory:	C:\Users\root\source\repos\FOTO
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00444A4C в функции _M_is_leaked() в файле c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRE0, Thread: 0x306C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00444A4C in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _M_is_leaked() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00473AEB in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: swap() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047B469 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043F269 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DE3E in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (125):
+
+    123:     //Массив картинок-меню
+    124:     Pictures menuPicture[COUNT_PICTURES];
+=>  125:     menuPicture[0] = {NULL, 100, "Pictures/Лицо/Овал1.bmp"};
+    126:     menuPicture[1] = {NULL, 200, "Pictures/Лицо/Овал2.bmp"};
+    127:     menuPicture[2] = {NULL, 300, "Pictures/Лицо/Овал3.bmp"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 18:36:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 30 2022 18:36:09
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00444A4C в функции _M_is_leaked() в файле c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRE0, Thread: 0x306C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00444A4C in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _M_is_leaked() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00473AEB in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: swap() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047B469 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043F269 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DE3E in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (125):
+
+    123:     //Массив картинок-меню
+    124:     Pictures menuPicture[COUNT_PICTURES];
+=>  125:     menuPicture[0] = {NULL, 100, "Pictures/Лицо/Овал1.bmp"};
+    126:     menuPicture[1] = {NULL, 200, "Pictures/Лицо/Овал2.bmp"};
+    127:     menuPicture[2] = {NULL, 300, "Pictures/Лицо/Овал3.bmp"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 18:36:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 30 2022 18:36:09
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00444BDC в функции _M_is_leaked() в файле c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRE0, Thread: 0x4EE4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00444BDC in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _M_is_leaked() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00473AEB in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: swap() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AE29 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043F3F9 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DFC6 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (125):
+
+    123:     //Массив картинок-меню
+    124:     Pictures menuPicture[COUNT_PICTURES];
+=>  125:     menuPicture[0] = {NULL, 100, "Pictures/Лицо/Овал1.bmp"};
+    126:     menuPicture[1] = {NULL, 200, "Pictures/Лицо/Овал2.bmp"};
+    127:     menuPicture[2] = {NULL, 300, "Pictures/Лицо/Овал3.bmp"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 18:37:38, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 30 2022 18:37:44
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00444BDC в функции _M_is_leaked() в файле c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRE0, Thread: 0x4EE4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00444BDC in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _M_is_leaked() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00473AEB in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: swap() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AE29 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043F3F9 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DFC6 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (125):
+
+    123:     //Массив картинок-меню
+    124:     Pictures menuPicture[COUNT_PICTURES];
+=>  125:     menuPicture[0] = {NULL, 100, "Pictures/Лицо/Овал1.bmp"};
+    126:     menuPicture[1] = {NULL, 200, "Pictures/Лицо/Овал2.bmp"};
+    127:     menuPicture[2] = {NULL, 300, "Pictures/Лицо/Овал3.bmp"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 18:37:38, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 30 2022 18:37:44
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00444BDC в функции _M_is_leaked() в файле c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x00000100 в модуле C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRE0, Thread: 0x2FAC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00444BDC in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _M_is_leaked() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00473AEB in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: swap() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AE29 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043F44E in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DFC6 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (126):
+
+    124:     //Массив картинок-меню
+    125:     Pictures menuPicture[COUNT_PICTURES];
+=>  126:     menuPicture[0] = {NULL, 100, "Pictures/Лицо/Овал1.bmp"};
+    127:     menuPicture[1] = {NULL, 200, "Pictures/Лицо/Овал2.bmp"};
+    128:     menuPicture[2] = {NULL, 300, "Pictures/Лицо/Овал3.bmp"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 18:40:33, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 30 2022 18:40:39
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00444BDC в функции _M_is_leaked() в файле c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x00000100 в модуле C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRE0, Thread: 0x2FAC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00444BDC in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _M_is_leaked() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00473AEB in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: swap() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AE29 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043F44E in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DFC6 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (126):
+
+    124:     //Массив картинок-меню
+    125:     Pictures menuPicture[COUNT_PICTURES];
+=>  126:     menuPicture[0] = {NULL, 100, "Pictures/Лицо/Овал1.bmp"};
+    127:     menuPicture[1] = {NULL, 200, "Pictures/Лицо/Овал2.bmp"};
+    128:     menuPicture[2] = {NULL, 300, "Pictures/Лицо/Овал3.bmp"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 18:40:33, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 30 2022 18:40:40
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00444BDC в функции _M_is_leaked() в файле c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRE0, Thread: 0x2E9C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00444BDC in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _M_is_leaked() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00473AEB in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: swap() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AE29 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043F3F9 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DFC6 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (129):
+
+    127:     //Массив картинок-меню
+    128:     Pictures menuPicture[COUNT_PICTURES];
+=>  129:     menuPicture[0] = {NULL, 100, "Pictures/Лицо/Овал1.bmp"};
+    130:     menuPicture[1] = {NULL, 200, "Pictures/Лицо/Овал2.bmp"};
+    131:     menuPicture[2] = {NULL, 300, "Pictures/Лицо/Овал3.bmp"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 18:41:37, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 30 2022 18:41:44
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00444BDC в функции _M_is_leaked() в файле c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRE0, Thread: 0x2E9C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00444BDC in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _M_is_leaked() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00473AEB in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: swap() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AE29 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043F3F9 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DFC6 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (129):
+
+    127:     //Массив картинок-меню
+    128:     Pictures menuPicture[COUNT_PICTURES];
+=>  129:     menuPicture[0] = {NULL, 100, "Pictures/Лицо/Овал1.bmp"};
+    130:     menuPicture[1] = {NULL, 200, "Pictures/Лицо/Овал2.bmp"};
+    131:     menuPicture[2] = {NULL, 300, "Pictures/Лицо/Овал3.bmp"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 18:41:37, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 30 2022 18:41:44
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044400C в функции _M_is_leaked() в файле c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x2168 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044400C in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _M_is_leaked() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00472F1B in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: swap() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047A259 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0041DA02 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: readFromDir() at C:/Users/root/source/repos/FOTO/main.cpp (95):
+
+     93:         if((string)ent->d_name != "." && (string)ent->d_name != "..")
+     94:         {
+=>   95:             menuPicture[COUNT_PICTURES].adress = adress + (string)ent->d_name;
+     96:             COUNT_PICTURES ++;
+     97:         }
+
+# 4 0x0041DF9C in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (128):
+
+    126:     Pictures menuPicture[COUNT_PICTURES];
+    127: 
+=>  128:     readFromDir("Pictures/Лицо/", menuPicture, COUNT_PICTURES);
+    129: 
+    130:     /*
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 18:45:11, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 30 2022 18:45:16
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044400C в функции _M_is_leaked() в файле c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x2168 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044400C in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _M_is_leaked() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00472F1B in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: swap() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047A259 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0041DA02 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: readFromDir() at C:/Users/root/source/repos/FOTO/main.cpp (95):
+
+     93:         if((string)ent->d_name != "." && (string)ent->d_name != "..")
+     94:         {
+=>   95:             menuPicture[COUNT_PICTURES].adress = adress + (string)ent->d_name;
+     96:             COUNT_PICTURES ++;
+     97:         }
+
+# 4 0x0041DF9C in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (128):
+
+    126:     Pictures menuPicture[COUNT_PICTURES];
+    127: 
+=>  128:     readFromDir("Pictures/Лицо/", menuPicture, COUNT_PICTURES);
+    129: 
+    130:     /*
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 18:45:11, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 30 2022 18:45:17
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044401C в функции _M_is_leaked() в файле c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x750 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044401C in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _M_is_leaked() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00472F2B in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: swap() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047A269 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0041DA02 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: readFromDir() at C:/Users/root/source/repos/FOTO/main.cpp (95):
+
+     93:         if((string)ent->d_name != "." && (string)ent->d_name != "..")
+     94:         {
+=>   95:             menuPicture[COUNT_PICTURES].adress = adress + (string)ent->d_name;
+     96:             COUNT_PICTURES ++;
+     97:         }
+
+# 4 0x0041DF9C in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (128):
+
+    126:     Pictures menuPicture[COUNT_PICTURES];
+    127: 
+=>  128:     COUNT_PICTURES = readFromDir("Pictures/Лицо/", menuPicture, COUNT_PICTURES);
+    129: 
+    130:     /*
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 18:46:38, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 30 2022 18:46:44
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044401C в функции _M_is_leaked() в файле c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x750 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044401C in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _M_is_leaked() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00472F2B in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: swap() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047A269 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0041DA02 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: readFromDir() at C:/Users/root/source/repos/FOTO/main.cpp (95):
+
+     93:         if((string)ent->d_name != "." && (string)ent->d_name != "..")
+     94:         {
+=>   95:             menuPicture[COUNT_PICTURES].adress = adress + (string)ent->d_name;
+     96:             COUNT_PICTURES ++;
+     97:         }
+
+# 4 0x0041DF9C in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (128):
+
+    126:     Pictures menuPicture[COUNT_PICTURES];
+    127: 
+=>  128:     COUNT_PICTURES = readFromDir("Pictures/Лицо/", menuPicture, COUNT_PICTURES);
+    129: 
+    130:     /*
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 18:46:38, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 30 2022 18:46:44
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044403C в функции _M_is_leaked() в файле c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x4864 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044403C in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _M_is_leaked() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00472F4B in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: swap() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047A289 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0041DA23 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: readFromDir() at C:/Users/root/source/repos/FOTO/main.cpp (97):
+
+     95:         {
+     96:             menuPicture[COUNT_PICTURES].y = lastY;
+=>   97:             menuPicture[COUNT_PICTURES].adress = adress + (string)ent->d_name;
+     98:             COUNT_PICTURES ++;
+     99:             lastY +=100;
+
+# 4 0x0041DFC1 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (131):
+
+    129:     Pictures menuPicture[COUNT_PICTURES];
+    130: 
+=>  131:     COUNT_PICTURES = readFromDir("Pictures/Лицо/", menuPicture, COUNT_PICTURES);
+    132: 
+    133:     /*
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 18:49:18, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 30 2022 18:49:24
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044403C в функции _M_is_leaked() в файле c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x4864 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044403C in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _M_is_leaked() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00472F4B in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: swap() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047A289 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0041DA23 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: readFromDir() at C:/Users/root/source/repos/FOTO/main.cpp (97):
+
+     95:         {
+     96:             menuPicture[COUNT_PICTURES].y = lastY;
+=>   97:             menuPicture[COUNT_PICTURES].adress = adress + (string)ent->d_name;
+     98:             COUNT_PICTURES ++;
+     99:             lastY +=100;
+
+# 4 0x0041DFC1 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (131):
+
+    129:     Pictures menuPicture[COUNT_PICTURES];
+    130: 
+=>  131:     COUNT_PICTURES = readFromDir("Pictures/Лицо/", menuPicture, COUNT_PICTURES);
+    132: 
+    133:     /*
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 18:49:18, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 30 2022 18:49:24
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044403C в функции _M_is_leaked() в файле c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x1408 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044403C in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _M_is_leaked() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00472F4B in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: swap() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047A289 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0041DA23 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: readFromDir() at C:/Users/root/source/repos/FOTO/main.cpp (97):
+
+     95:         {
+     96:             menuPicture[COUNT_PICTURES].y = lastY;
+=>   97:             menuPicture[COUNT_PICTURES].adress = adress + (string)ent->d_name;
+     98:             COUNT_PICTURES ++;
+     99:             lastY +=100;
+
+# 4 0x0041E080 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (135):
+
+    133: 
+    134: 
+=>  135:     COUNT_PICTURES = readFromDir("Pictures/Лицо/", menuPicture, COUNT_PICTURES);
+    136: 
+    137:     /*
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 18:53:33, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 30 2022 18:53:39
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044403C в функции _M_is_leaked() в файле c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x1408 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044403C in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _M_is_leaked() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00472F4B in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: swap() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047A289 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: operator=() at c:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0041DA23 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: readFromDir() at C:/Users/root/source/repos/FOTO/main.cpp (97):
+
+     95:         {
+     96:             menuPicture[COUNT_PICTURES].y = lastY;
+=>   97:             menuPicture[COUNT_PICTURES].adress = adress + (string)ent->d_name;
+     98:             COUNT_PICTURES ++;
+     99:             lastY +=100;
+
+# 4 0x0041E080 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (135):
+
+    133: 
+    134: 
+=>  135:     COUNT_PICTURES = readFromDir("Pictures/Лицо/", menuPicture, COUNT_PICTURES);
+    136: 
+    137:     /*
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 18:53:33, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 30 2022 18:53:40
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
