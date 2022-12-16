@@ -6,6 +6,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+using namespace std;
+
 struct Button
 {
     int x;
@@ -104,13 +106,62 @@ int readFromDir(string adress, Pictures menuPicture[], int COUNT_PICTURES)
     return COUNT_PICTURES;
 }
 
+
+//Диалог открытия / сохранения файла
+string runFileDialog(bool isSave)
+{
+    string fileName = "";
+
+    OPENFILENAME ofn;       // common dialog box structure
+    TCHAR szFile[260] = { 0 };       // if using TCHAR macros
+
+    // Initialize OPENFILENAME
+    ZeroMemory(&ofn, sizeof(ofn));
+    ofn.lStructSize = sizeof(ofn);
+    ofn.hwndOwner = txWindow();
+    ofn.lpstrFile = szFile;
+    ofn.nMaxFile = sizeof(szFile);
+    ofn.lpstrFilter = ("Text\0*.TXT\0");
+    ofn.nFilterIndex = 1;
+    ofn.lpstrFileTitle = NULL;
+    ofn.nMaxFileTitle = 0;
+    ofn.lpstrInitialDir = NULL;
+    ofn.Flags = OFN_PATHMUSTEXIST | OFN_FILEMUSTEXIST;
+
+    if (isSave)
+    {
+        if (GetSaveFileName(&ofn) == TRUE)
+        {
+            fileName = ofn.lpstrFile;
+
+            if (fileName.find(".txt") > 1000)
+            {
+                fileName = fileName + ".txt";
+            }
+        }
+    }
+    else
+    {
+        if (GetOpenFileName(&ofn) == TRUE)
+        {
+            fileName = ofn.lpstrFile;
+        }
+    }
+
+    return fileName;
+}
+
+const int COUNT_BTN = 7;
+const int BTN_SAVE = COUNT_BTN - 2;
+const int BTN_LOAD = COUNT_BTN - 1;
+
+
 int main()
 {
     txCreateWindow (1200, 800);
     txDisableAutoPause();
     txTextCursor (false);
 
-    int COUNT_BTN = 7;
     int COUNT_PICTURES = 0;
     int vybor = -1;
     bool mouse_free = false;
@@ -173,6 +224,7 @@ int main()
 
         menuPicture[npic].visible = false;
 
+        centralPicture[npic].adress = menuPicture[npic].adress;
         centralPicture[npic].image = menuPicture[npic].image;
         centralPicture[npic].w = menuPicture[npic].w;
         centralPicture[npic].h = menuPicture[npic].h;
@@ -334,6 +386,68 @@ int main()
             }
         }
 
+        //Сохранить
+        if(Click(btn[BTN_SAVE]))
+        {
+            string fileName = runFileDialog(true);
+            if (fileName != "")
+            {
+                ofstream fout; //Завели под файл переменную
+
+                fout.open(fileName); //Открыли файл для записи
+
+                for (int npic = 0; npic < COUNT_PICTURES; npic++)
+                {
+                    if (centralPicture[npic].visible)
+                    {
+                        fout << centralPicture[npic].x << endl; //Что-то записали
+                        fout << centralPicture[npic].y << endl;
+                        fout << centralPicture[npic].adress << endl;
+                    }
+                }
+                fout.close();            //Закрыли файл
+
+                txMessageBox("Сохранено", "Спасибо", MB_ICONINFORMATION);
+            }
+
+        }
+
+
+        //Загрузить
+        if (Click(btn[BTN_LOAD]))
+        {
+            string fileName = runFileDialog(false);
+            if (fileName != "")
+            {
+                for (int npic = 0; npic < COUNT_PICTURES; npic++)
+                {
+                    centralPicture[npic].visible = false;
+                }
+
+                char buff[50];              // Сюда будем считывать текст
+                ifstream fin(fileName);      // открыли файл для чтения
+                while (fin.good())
+                {
+                    fin.getline(buff, 50); // считали строку из файла
+                    int x = atoi(buff);
+                    fin.getline(buff, 50); // считали строку из файла
+                    int y = atoi(buff);
+                    fin.getline(buff, 50); // считали строку из файла
+                    string adress = (buff);
+
+                    for (int npic = 0; npic < COUNT_PICTURES; npic++)
+                    {
+                        if (centralPicture[npic].adress == adress)
+                        {
+                            centralPicture[npic].x = x;
+                            centralPicture[npic].y = y;
+                            centralPicture[npic].visible = true;
+                        }
+                    }
+                }
+                fin.close();                //Закрыли файл
+            }
+        }
 
         txSleep(50);
         txEnd();

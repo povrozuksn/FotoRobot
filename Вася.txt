@@ -1,0 +1,15 @@
+450
+200
+Pictures/Лицо/Овал1.bmp
+490
+150
+Pictures/Волосы/Волосы1.bmp
+570
+400
+Pictures/Глаза/Глаза2.bmp
+640
+460
+Pictures/Носы/Нос3.bmp
+620
+550
+Pictures/Губы/Губы1.bmp

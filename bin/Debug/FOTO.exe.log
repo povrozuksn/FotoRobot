@@ -2029,3 +2029,126 @@ Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
 Directory:	C:\Users\root\source\repos\FOTO
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 10854, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRE0, Thread: 0x2568 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040A9D0 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txBuffer_Delete() at c:/codeblocks/mingw/include/txlib.h (10854)
+# 1 0x00416CF7 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txDeleteDC() at c:/codeblocks/mingw/include/txlib.h (13597)
+# 2 0x00416E43 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txDeleteDC() at c:/codeblocks/mingw/include/txlib.h (13619)
+
+# 3 0x0041F718 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (351):
+
+    349:     for(int npic=0; npic < COUNT_PICTURES; npic++)
+    350:     {
+=>  351:         txDeleteDC(centralPicture[npic].image);
+    352:     }
+    353: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 19:17:43, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Dec 07 2022 18:29:12
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 10854, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRE0, Thread: 0x2568 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040A9D0 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txBuffer_Delete() at c:/codeblocks/mingw/include/txlib.h (10854)
+# 1 0x00416CF7 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txDeleteDC() at c:/codeblocks/mingw/include/txlib.h (13597)
+# 2 0x00416E43 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txDeleteDC() at c:/codeblocks/mingw/include/txlib.h (13619)
+
+# 3 0x0041F718 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (351):
+
+    349:     for(int npic=0; npic < COUNT_PICTURES; npic++)
+    350:     {
+=>  351:         txDeleteDC(centralPicture[npic].image);
+    352:     }
+    353: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 30 2022 19:17:43, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Dec 07 2022 18:29:12
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 10854, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRE0, Thread: 0x3288 (Main), GetLastError(): 13 (Недопустимые данные), _doserrno: 2 (No such file or directory). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040A9D0 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: _txBuffer_Delete() at c:/codeblocks/mingw/include/txlib.h (10854)
+# 1 0x00416CF7 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txDeleteDC() at c:/codeblocks/mingw/include/txlib.h (13597)
+# 2 0x00416E43 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: txDeleteDC() at c:/codeblocks/mingw/include/txlib.h (13619)
+
+# 3 0x0041FBF8 in C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe: main() at C:/Users/root/source/repos/FOTO/main.cpp (420):
+
+    418:     for(int npic=0; npic < COUNT_PICTURES; npic++)
+    419:     {
+=>  420:         txDeleteDC(centralPicture[npic].image);
+    421:     }
+    422: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Dec  9 2022 19:18:29, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Dec 09 2022 19:19:23
+
+Run file:	C:\Users\root\source\repos\FOTO\bin\Debug\FOTO.exe
+Directory:	C:\Users\root\source\repos\FOTO
+
+--------------------------------------------------
